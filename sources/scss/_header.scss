@@ -1,0 +1,95 @@
+/* Header */
+.navbar-toggler {
+    border: none !important;
+    i {
+        font-size: 1.6rem;
+        
+    }
+}
+
+.brand {
+    transform: translateX(-10%);
+    font-size: 0.91rem !important;
+}
+
+@media screen and (min-width: 768px) {
+    .brand {
+        display: none !important;
+    }
+}
+
+.bg-pattern {
+    background: var(--dark) url('../img/pattern-header.jpg') !important;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-toggler {
+    border: none;
+    i {
+        color: white;
+    }
+}
+
+.navbar > .container {
+    justify-content: flex-start;
+}
+
+.menu-menu-principal-container {
+    ul {
+        li {
+            a.nav-link {
+                display: block;
+                padding: 18px 32px !important;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            &.current_page_item {
+                a {
+                    background: var(--violet);
+                    position: relative;
+                    font-weight: 500;
+                    &::after {
+                        content:"";
+                        width: 100%;
+                        height: 4px;
+                        display : inline-block;
+                        position: absolute;
+                        bottom: -7px;
+                        left: 50%;
+                        height : 0;
+                        width : 0;
+                        border-top : 8px solid var(--violet);
+                        border-right : 8px solid transparent;
+                        border-left : 8px solid transparent;
+                        transform: translateX(-50%);
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-menu-principal-container {
+        ul {
+            margin-top: 25px;
+            li {
+                a.nav-link {
+                    display: block;
+                    padding: 18px 32px !important;
+                }
+                &.current_page_item {
+                    a {
+                        background: var(--violet);
+                        position: relative;
+                        &::after {
+                            display: none;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}

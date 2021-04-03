@@ -1,0 +1,98 @@
+/* Import my SASS */
+@import 'variables';
+@import 'mixins';
+@import 'global';
+
+@import 'header';
+
+/* Then BS */
+@import 'bootstrap/bootstrap';
+
+/* Styles (override BS) */
+body {
+    font-family: $font-content;
+}
+
+/* Front-page */
+.btn-rapport-1 {
+    align-items: baseline;
+
+    .star-icon {
+        transform: translateX(-100px);
+        opacity: 0;
+        padding: 0;
+        display: none;
+        font-size: 0.85rem;
+    }
+
+    &:hover,
+    &:focus {
+        .star-icon {
+            display: inline-flex;
+            animation: appear-from-left ease-in 0.20s forwards;
+        }
+    }
+}
+
+@keyframes appear-from-left {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        display: inline-block;
+        opacity: 1;
+        transform: translateX(0);
+        padding-right: 0.42rem;
+    }
+}
+
+.front-page {
+    min-height: 100vh;
+
+    .site-content {
+        display: grid;
+        background: #fff url('../img/watermark.svg') no-repeat center top;
+        place-items: center;
+        min-height: calc(100vh - 60px); //header height
+
+        .hero-wrapper {
+            //margin-top: -60px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .site-content {
+        .hero-wrapper {
+            margin-top: -60px;
+        }
+    }
+}
+
+.up-title {
+    font-weight: 600;
+    color: var(--light-violet);
+}
+
+/* Footer */
+footer {
+    background: none !important;
+    display: block;
+    width: auto !important;
+    font-size: 0.69rem;
+    position: fixed;
+    right: 25px;
+    bottom: 0px;
+    padding-bottom: 0 !important;
+
+    a {
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            color: $secondary;
+        }
+    }
+}

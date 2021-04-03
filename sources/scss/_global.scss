@@ -1,0 +1,12 @@
+/* Global styles */
+*::selection {
+    background-color: var(--light-violet);
+    color: #fff;
+}
+
+.btn-primary {
+    border: none !important;
+    &:hover, &:focus {
+        background-color: lighten($primary, 3%) !important;
+    }
+}

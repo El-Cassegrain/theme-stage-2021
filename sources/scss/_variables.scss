@@ -1,0 +1,20 @@
+/* Variables prefered css variables in case of dark theme */
+:root {
+    
+    /* Colors */
+    --violet: #6C63FF;
+    --light-violet: #D0CDE1;
+    --very-light-violet: #F9F9FB;
+    --dark: #111111;
+    
+    --primary: var(--violet);
+    --secondary: #8886A1;
+    
+}
+
+$primary: #6C63FF;
+$secondary: #8886A1;
+
+/* Fonts */
+$font-title: 'Norican', cursive;
+$font-content: 'Roboto', sans-serif;
