@@ -12,6 +12,13 @@
     font-size: 0.91rem !important;
 }
 
+.brand a {
+    color: var(--very-light-violet);
+    &:hover, &:focus {
+        color: var(--very-light-violet);
+    }
+}
+
 @media screen and (min-width: 768px) {
     .brand {
         display: none !important;

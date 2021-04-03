@@ -13,6 +13,46 @@ body {
     font-family: $font-content;
 }
 
+/* Animation intro */
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.slider {
+    background: var(--light-violet);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.intro-text {
+    color: var(--very-light-violet);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+.hide {
+    background-color: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
 /* Front-page */
 .btn-rapport-1 {
     align-items: baseline;
@@ -29,7 +69,7 @@ body {
     &:focus {
         .star-icon {
             display: inline-flex;
-            animation: appear-from-left ease-in 0.20s forwards;
+            animation: appear-from-left ease-in-out 0.20s forwards;
         }
     }
 }
@@ -53,13 +93,10 @@ body {
 
     .site-content {
         display: grid;
-        background: #fff url('../img/watermark.svg') no-repeat center top;
+        background: #fff url('../img/watermark.svg') no-repeat center 15%;
         place-items: center;
         min-height: calc(100vh - 60px); //header height
 
-        .hero-wrapper {
-            //margin-top: -60px;
-        }
     }
 }
 

@@ -24,6 +24,25 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php if(is_front_page()): ?>
+<div class="intro">
+    <div class="intro-text">
+        <h1 class="hide">
+            <span class="text">Always create</span>
+        </h1>
+        <h1 class="hide">
+            <span class="text">For the web</span>
+        </h1>
+        <h1 class="hide">
+            <span class="text">With love.</span>
+        </h1>
+    </div>
+</div>
+<div class="slider"></div>
+<?php endif; ?>
+
+
 <?php
 	if (function_exists('wp_body_open')) {
 		wp_body_open();
