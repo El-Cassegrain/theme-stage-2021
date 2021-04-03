@@ -99,7 +99,7 @@ function theme_enqueue_styles() {
     
     /* My buttons */
     wp_enqueue_style( 'btns', get_stylesheet_directory_uri() . '/assets/css/buttons.css', array(), 1 );
-
+    
     /* My styles */
     wp_enqueue_style( 'main-styles', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), 1 );
     

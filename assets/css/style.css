@@ -9869,10 +9869,20 @@ body {
 }
 
 .front-page .site-content {
+  overflow: hidden;
+}
+
+.front-page .hero-wrapper {
   display: grid;
   background: #fff url("../img/watermark.svg") no-repeat center 15%;
   place-items: center;
   min-height: calc(100vh - 60px);
+}
+
+.front-page .section {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 @media screen and (min-width: 992px) {
