@@ -15,7 +15,7 @@
 /* Global styles */
 *::selection {
   background-color: var(--light-violet);
-  color: #fff;
+  color: #1e1e1e;
 }
 
 .btn-primary {
@@ -55,7 +55,7 @@
 }
 
 .bg-pattern {
-  background: var(--dark) url("../img/pattern-header.jpg") !important;
+  background: linear-gradient(90deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.65028) 66%, #111111 100%), url("../../assets/img/pattern-header.jpg") !important;
   padding-top: 0;
   padding-bottom: 0;
 }

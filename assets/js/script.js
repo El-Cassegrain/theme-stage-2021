@@ -331,3 +331,35 @@
     }, false);
 
 })(window);
+
+
+/* Intro gesture random sentences */
+const span = document.getElementsByTagName('span');
+let textFirstLine = span[0];
+let textSecondLine = span[1];
+let textFirdLine = span[2];
+
+aleatoire = Math.floor(Math.random() * 4)
+switch (aleatoire) {
+    case 0:
+        textFirstLine.innerHTML = "Always create";
+        textSecondLine.innerHTML = "For the web";
+        textFirdLine.innerHTML = "With love.";
+        break;
+
+    case 1:
+        textFirstLine.innerHTML = "Always";
+        textSecondLine.innerHTML = "Work hard";
+        textFirdLine.innerHTML = "And sweat.";
+        break;
+    case 2:
+        textFirstLine.innerHTML = "Always";
+        textSecondLine.innerHTML = "Try hard";
+        textFirdLine.innerHTML = "And get rewarded.";
+        break;
+    case 3:
+        textFirstLine.innerHTML = "Even";
+        textSecondLine.innerHTML = "The life";
+        textFirdLine.innerHTML = "Is random.";
+        break;
+}

@@ -29,7 +29,7 @@
 }
 
 .bg-pattern {
-    background: var(--dark) url('../img/pattern-header.jpg') !important;
+    background: linear-gradient(90deg, rgba(17,17,17,0) 0%, rgba(17,17,17,0.6502801804315477) 66%, rgba(17,17,17,1) 100%), url('../../assets/img/pattern-header.jpg') !important;
     padding-top: 0;
     padding-bottom: 0;
 }

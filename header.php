@@ -25,7 +25,7 @@
 
 <body <?php body_class(); ?>>
 
-<?php if(is_front_page()): ?>
+
 <div class="intro">
     <div class="intro-text">
         <h1 class="hide">
@@ -40,7 +40,7 @@
     </div>
 </div>
 <div class="slider"></div>
-<?php endif; ?>
+
 
 
 <?php
@@ -69,4 +69,4 @@
 			}
 			?>
 
-	<div id="content" class="site-content pt-4 pt-lg-0">
+	<div id="content" class="site-content pt-4 <?php if(is_front_page()){echo 'pt-lg-0';}; ?> ">

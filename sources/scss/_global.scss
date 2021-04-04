@@ -1,7 +1,7 @@
 /* Global styles */
 *::selection {
     background-color: var(--light-violet);
-    color: #fff;
+    color: lighten(#111111, 5%);
 }
 
 .btn-primary {
