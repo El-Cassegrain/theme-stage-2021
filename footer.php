@@ -14,16 +14,8 @@
 	</div><!-- #content -->
 	
 
-	<footer id="colophon" class="site-footer pt-5 pb-3 mt-md-4">
-
-		<?php do_action('underboot_footer'); ?>
-
-		<div class="container">
-			<div class="site-info">
-				<span>Created with ❤️</span>
-			</div><!-- .site-info -->
-		</div><!-- .container -->
-
+	<footer class="site-footer">
+		<span>Created with ❤️</span>
 	</footer>
 
 </div><!-- #page -->

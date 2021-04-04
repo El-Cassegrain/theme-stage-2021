@@ -2890,7 +2890,7 @@ footer.page-footer .footer-copyright {
   background-color: transparent;
 }
 
-.btn {
+.btn:not(#searchsubmit) {
   line-height: 31px;
   position: relative;
   padding: 5px 22px;
@@ -3359,4 +3359,9 @@ a.waves-effect .waves-ripple {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+}
+
+#searchsubmit {
+    box-shadow: none;
+    text-transform: uppercase;
 }

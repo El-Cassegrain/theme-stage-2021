@@ -90,26 +90,29 @@ body {
 
 .front-page {
     min-height: 100vh;
+
     .site-content {
         overflow: hidden;
-    }
-    .hero-wrapper {
-        display: grid;
         background: #fff url('../img/watermark.svg') no-repeat center 15%;
-        place-items: center;
-        min-height: calc(100vh - 60px); //header height
-        
+
     }
+
+    .hero-wrapper {
+        display: flex;
+        align-items: center;
+        min-height: calc(100vh - 60px); //header height
+    }
+
     .section {
         display: grid;
         place-items: center;
-        min-height: 100vh; 
+        min-height: 100vh;
     }
 }
 
 @media screen and (min-width: 992px) {
     .site-content {
-        .hero-wrapper {
+        .hero-content {
             margin-top: -60px;
         }
     }
@@ -124,12 +127,10 @@ body {
 footer {
     background: none !important;
     display: block;
-    width: auto !important;
     font-size: 0.69rem;
     position: fixed;
     right: 25px;
-    bottom: 0px;
-    padding-bottom: 0 !important;
+    bottom: 8px;
 
     a {
         text-decoration: underline;

@@ -1,9 +1,10 @@
 /* Header */
 .navbar-toggler {
     border: none !important;
+
     i {
         font-size: 1.6rem;
-        
+
     }
 }
 
@@ -14,7 +15,9 @@
 
 .brand a {
     color: var(--very-light-violet);
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         color: var(--very-light-violet);
     }
 }
@@ -33,6 +36,7 @@
 
 .navbar-toggler {
     border: none;
+
     i {
         color: white;
     }
@@ -48,31 +52,42 @@
             a.nav-link {
                 display: block;
                 padding: 18px 32px !important;
+
                 &:hover {
                     cursor: pointer;
                 }
             }
+
             &.current_page_item {
                 a {
                     background: var(--violet);
                     position: relative;
                     font-weight: 500;
+
                     &::after {
-                        content:"";
+                        content: "";
                         width: 100%;
                         height: 4px;
-                        display : inline-block;
+                        display: inline-block;
                         position: absolute;
                         bottom: -7px;
                         left: 50%;
-                        height : 0;
-                        width : 0;
-                        border-top : 8px solid var(--violet);
-                        border-right : 8px solid transparent;
-                        border-left : 8px solid transparent;
+                        height: 0;
+                        width: 0;
+                        border-top: 8px solid var(--violet);
+                        border-right: 8px solid transparent;
+                        border-left: 8px solid transparent;
                         transform: translateX(-50%);
                     }
-                } 
+
+                    &.dropdown-item {
+                        color: var(--very-light-violet) !important;
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+
             }
         }
     }
@@ -82,19 +97,22 @@
     .menu-menu-principal-container {
         ul {
             margin-top: 25px;
+
             li {
                 a.nav-link {
                     display: block;
                     padding: 18px 32px !important;
                 }
+
                 &.current_page_item {
                     a {
                         background: var(--violet);
                         position: relative;
+
                         &::after {
                             display: none;
                         }
-                    } 
+                    }
                 }
             }
         }

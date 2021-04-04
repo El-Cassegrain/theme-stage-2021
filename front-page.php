@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container hero-wrapper">
-    <div class="row flex-lg-row-reverse justify-content-md-center">
+    <div class="row flex-lg-row-reverse justify-content-md-center hero-content">
         <div class="col-12 col-lg-6 mt-3 mt-md-5 text-center">
             <img class="img-fluid d-lg-none" src="<?php echo get_stylesheet_directory_uri() . '/assets/img/hero-img-small.svg'; ?>" alt="Illustration stage">
             <img class="img-fluid d-none d-lg-block pl-5" src="<?php echo get_stylesheet_directory_uri() . '/assets/img/hero-img-md.svg'; ?>" alt="Illustration stage">
