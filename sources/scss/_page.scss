@@ -1,0 +1,74 @@
+/* Page styles */
+
+.single-img-bg {
+    width: auto;
+    height: 313px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .bg-alpha-blue {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba($primary, 0.85);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        .the-title {
+            color: white;
+            font-size: 2.375rem;
+            font-weight: 700;
+            margin-top: 25px;
+        }
+        .the-meta {
+            color: white;
+            margin-top: -120px;
+            ul {
+                margin: 0; padding: 0;
+                list-style: none;
+                display: inline-flex;
+                li a {
+                    display: inline-flex;
+                    color: white;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.wp-block-separator.is-style-wide {
+    margin: 60px;
+}
+
+#single-container {
+
+    h1, h2 {
+        line-height: 4rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    ul,
+    ol {
+        font-size: 1.1rem;
+    }
+
+    ul {
+        padding-left: 38px;
+        display: block;
+        li {
+            list-style: disc;
+
+        }
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

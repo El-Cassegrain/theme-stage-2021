@@ -127,3 +127,4 @@ function theme_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 
 
+add_image_size( '1366x313', 1366, 313, true );

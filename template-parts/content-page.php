@@ -10,7 +10,7 @@
 ?>
 
 <div class="row">
-    <div class="col-12">
+    <div class="col-12 content-page">
         <?php
             /**
              * Post thumbnail display

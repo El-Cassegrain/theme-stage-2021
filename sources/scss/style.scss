@@ -4,6 +4,7 @@
 @import 'global';
 
 @import 'header';
+@import 'page';
 
 /* Then BS */
 @import 'bootstrap/bootstrap';
@@ -39,8 +40,9 @@ body {
 
 .intro-text {
     color: var(--very-light-violet);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    //text-transform: uppercase;
 }
 
 .hide {
@@ -51,6 +53,7 @@ body {
 .hide span {
     transform: translateY(100%);
     display: inline-block;
+    font-size: 3.8rem;
 }
 
 /* Front-page */

@@ -1,7 +1,35 @@
 /* Global styles */
+html {font-size: 16px;}
+
+/* Responsive typography */
+@media screen and (min-width: 576px){html{font-size: 104%}}
+@media screen and (min-width: 768px){html{font-size: 108%}}
+@media screen and (min-width: 992px){html{font-size: 112%}}
+@media screen and (min-width: 1200px){html{font-size: 116%}}
+@media screen and (min-width: 1400px){html{font-size: 120%}}
+
+/* Breakpoints */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+
 *::selection {
     background-color: var(--light-violet);
     color: lighten(#111111, 5%);
+}
+
+.font-title {
+    //font-family: $font-title;
+}
+
+.btn-lg {
+    padding: .7rem 1.5rem !important;
 }
 
 .btn-primary {

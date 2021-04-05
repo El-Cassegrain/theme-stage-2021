@@ -69,4 +69,4 @@
 			}
 			?>
 
-	<div id="content" class="site-content pt-4 <?php if(is_front_page()){echo 'pt-lg-0';}; ?> ">
+	<div id="content" class="site-content">
