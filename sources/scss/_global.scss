@@ -20,8 +20,8 @@ $grid-breakpoints: (
 
 
 *::selection {
-    background-color: var(--light-violet);
-    color: lighten(#111111, 5%);
+    background-color: lighten($primary, 11%);
+    color: white;
 }
 
 .font-title {

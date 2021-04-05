@@ -50,8 +50,8 @@ html {
 
 /* Breakpoints */
 *::selection {
-  background-color: var(--light-violet);
-  color: #1e1e1e;
+  background-color: #a19bff;
+  color: white;
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -182,7 +182,7 @@ html {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgba(108, 99, 255, 0.85);
+  background: rgba(108, 99, 255, 0.85);
   top: 0;
   left: 0;
   bottom: 0;
@@ -246,6 +246,10 @@ html {
 
 #single-container p {
   font-size: 1rem;
+}
+
+#single-container p::first-letter {
+  padding-left: 21px;
 }
 
 /* Then BS */
@@ -10745,7 +10749,7 @@ body {
   to {
     display: inline-block;
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(-5px);
     padding-right: 0.42rem;
   }
 }
