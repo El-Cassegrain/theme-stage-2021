@@ -1,14 +1,14 @@
-<?php
-/**
- * The site header
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package underboot
- */
-
-?>
 <!doctype html>
+
+<!--
+      |
+      |
+     _|
+///\(o_o)/\\\
+|||  ` '  |||
+
+Under the hood -->
+
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">

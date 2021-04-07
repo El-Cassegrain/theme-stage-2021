@@ -127,4 +127,5 @@ function theme_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 
 
-add_image_size( '1366x313', 1366, 313, true );
+add_image_size( '1366x313', 1366, 313, true ); //featured page
+add_image_size( '497x283', 497, 283, true ); //featured article
