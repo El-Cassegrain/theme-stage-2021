@@ -51,12 +51,12 @@
     }
 
     h2 {
-        font-size: 1.9rem;
+        font-size: 2.2rem;
     }
 
     ul,
     ol {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     ul {
@@ -70,8 +70,5 @@
 
     p {
         font-size: 1rem;
-        &::first-letter {
-            padding-left: 21px;
-        }
     }
 }

@@ -27,7 +27,7 @@
                     
                         $thumbnail = get_the_post_thumbnail($post -> ID, "497x283", array('class' => 'img-fluid')); ?>
 
-        <div class="col-12 col-sm-10 col-md-6 col-xl-4 col-xxl-3">
+        <div class="col-12 col-sm-10 col-md-6 col-lg-5">
             <div class="box">
                 <article>
                     <!-- Thumb -->

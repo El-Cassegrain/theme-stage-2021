@@ -60,6 +60,7 @@ body {
 .btn-rapport-1 {
     align-items: baseline;
     padding-left: 0.5rem !important;
+
     .star-icon {
         transform: translateX(-100px);
         opacity: 0;
@@ -96,27 +97,44 @@ body {
 
     .site-content {
         overflow: hidden;
-        background: #fff url('../img/watermark.svg') no-repeat center 15%;
+        background: url('../img/watermark-2.svg') no-repeat center 75%, url('../img/watermark.svg') no-repeat center 15%;
+        
+        #fullpage {
+        .hero-wrapper {
+            display: flex;
+            align-items: center;
+            min-height: calc(100vh - 60px); //header height
+            display: none;
+        }
+
+        .section {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+        }
+    }
 
     }
 
-    .hero-wrapper {
-        display: flex;
-        align-items: center;
-        min-height: calc(100vh - 60px); //header height
-    }
+    
 
-    .section {
-        display: grid;
-        place-items: center;
-        min-height: 100vh;
-    }
+
+
 }
 
 @media screen and (min-width: 992px) {
     .site-content {
         .hero-content {
             margin-top: -60px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .site-content {
+        .hero-content {
+            margin-top: 50%;
+            transform: translateY(-75%);
         }
     }
 }
@@ -131,20 +149,24 @@ body {
     max-width: 100%;
     margin: 0 7px;
 }
+
 .box {
     margin: 2rem 2.5%;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     overflow: hidden;
+
     h2.title-article {
         font-size: 1.75rem;
         color: $blue;
         margin-top: -5px;
         font-weight: 500;
     }
+
     .post-categories {
         list-style: none;
         padding: 0 1.5rem;
     }
+
     span {
         display: inline-block;
         padding: 0 1.5rem 6px 1.5rem;
@@ -157,8 +179,9 @@ body {
         color: $secondary;
         font-size: 1rem;
         line-height: 2rem;
-        
+
     }
+
     .subtitle {
         font-size: 1.48rem;
         font-weight: bold;

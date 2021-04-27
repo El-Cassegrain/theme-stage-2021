@@ -359,7 +359,7 @@ switch (aleatoire) {
         break;
     case 3:
         textFirstLine.innerHTML = "Even";
-        textSecondLine.innerHTML = "The life";
+        textSecondLine.innerHTML = "Life";
         textFirdLine.innerHTML = "Is random.";
         break;
 }
@@ -401,3 +401,10 @@ jQuery('a[href*="#"]')
       }
     }
   });
+
+/* Full page */
+new fullpage('#fullpage', {
+    autoScrolling: true,
+    navigation: true,
+    responsiveWidth: 768
+});
